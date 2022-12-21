@@ -147,5 +147,4 @@ Currently, the implementation is restricted to a fixed 3D volume. For high-quali
 3. Original TSDF Fusion library : <a href="https://github.com/andyzeng/tsdf-fusion-python" target="_blank">https://github.com/andyzeng/tsdf-fusion-python</a>.
 
 
-
-
+*Project page template inspired from [GradSLAM](https://gradslam.github.io/).*
