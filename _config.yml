@@ -1,0 +1,6 @@
+theme: minima
+title: PyTorch Implementation of Kinect Fusion Algorithm For 3D Reconstruction
+description: Kinect Fusion implementation with GPU acceleration capabilities using PyTorch. Vectorized implementation of the ICP algorithm and TSDF Fusion algorithm to enable GPU aceleration capabilities.
+
+header_pages:
+  about.md
