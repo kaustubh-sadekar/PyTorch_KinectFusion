@@ -59,13 +59,16 @@ Kinect Fusion uses **Fast ICP** which combines **projective data-association** a
 
 The algorithm for Fast ICP is as follows:
 
-<p align='left'>
+<p align='center'>
   <img src='/images/math/FastICP.png' width=450>
 </p>
 
 I used PyTorch for vectorized implementation and to enable GPU acceleration capabilities for Fast ICP. The following result illustrates the process of aligning two pointclouds using the vectorized implementation. The pointclouds for the demo were generated using a car model from <a href="https://shapenet.org/" target="_blank">ShapeNet dataset</a>  and the RGB-D images were generated using the renderer provided by <a href="https://pytorch3d.org/docs/renderer" target="_blank">PyTorch3D</a>.
 
-{% include feature_row %}
+<p align='left'>
+  <img src='/images/cars2_render.gif' width=450>
+  <img src='/images/cars2_icp.gif' width=450>
+</p>
 
 
 ### PyTorch Implementation of TSDF Fusion Algorithm
