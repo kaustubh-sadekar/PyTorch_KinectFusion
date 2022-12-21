@@ -67,7 +67,17 @@ I used PyTorch for vectorized implementation and to enable GPU acceleration capa
 
 <p align='left'>
   <img src='/images/cars2_render.gif' width=450>
+<!--   <img src='/images/cars2_icp.gif' width=450> -->
+</p>
+<p align='center'>
+    RGB and Depth frames of 3D model rendered using PyTorch3D 
+</p>
+
+<p align='left'>
   <img src='/images/cars2_icp.gif' width=450>
+</p>
+<p align='center'>
+    Iterative alignment of the pointclouds using ICP
 </p>
 
 
