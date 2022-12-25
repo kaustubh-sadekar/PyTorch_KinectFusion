@@ -10,7 +10,7 @@ layout: default
 Kinect Fusion is a real-time 3D reconstruction algorithm that generates a 3D model of a given scene using a sequence of depth images. There are some standard opensource implementations for the Kinect Fusion algorithm available online. However, most of them are written in C++. This project aims to create a complete python implementation of the Kinect Fusion algorithm and use **vectorization with PyTorch** to enable **GPU acceleration** capabilities.
 
 <p align='center'>
-  <img src='/images/KinFu_LivingRoom.gif' width=800>
+  <img src='images/KinFu_LivingRoom.gif' width=800>
 </p>
 <p align='center'>
     3D Reconstruction results on the <a href="http://redwood-data.org/indoor/dataset.html" target="_blank">livingroom sequence of ICL-NUIM dataset</a> using the implementation code. 
@@ -54,19 +54,19 @@ ICP is commonly used for the registration of 3D pointclouds. ICP calculates the 
 Kinect Fusion uses **Fast ICP** which combines **projective data-association** and **point-plane ICP** algorithm. The objective function for Fast ICP is as follows:
 
 <p align='center'>
-  <img src='/images/math/FastICP_objfun.png' width=450>
+  <img src='images/math/FastICP_objfun.png' width=450>
 </p>
 
 The algorithm for Fast ICP is as follows:
 
 <p align='center'>
-  <img src='/images/math/FastICP.png' width=450>
+  <img src='images/math/FastICP.png' width=450>
 </p>
 
 I used PyTorch for vectorized implementation and to enable GPU acceleration capabilities for Fast ICP. The following result illustrates the process of aligning two pointclouds using the vectorized implementation. The pointclouds for the demo were generated using a car model from <a href="https://shapenet.org/" target="_blank">ShapeNet dataset</a>  and the RGB-D images were generated using the renderer provided by <a href="https://pytorch3d.org/docs/renderer" target="_blank">PyTorch3D</a>.
 
 <p align='center'>
-  <img src='/images/cars2_render.gif' width=450>
+  <img src='images/cars2_render.gif' width=450>
 <!--   <img src='/images/cars2_icp.gif' width=450> -->
 </p>
 <p align='center'>
@@ -74,7 +74,7 @@ I used PyTorch for vectorized implementation and to enable GPU acceleration capa
 </p>
 
 <p align='center'>
-  <img src='/images/cars2_icp.gif' width=450>
+  <img src='images/cars2_icp.gif' width=450>
 </p>
 <p align='center'>
     Iterative alignment of the pointclouds using ICP
@@ -86,7 +86,7 @@ I used PyTorch for vectorized implementation and to enable GPU acceleration capa
 Fusing TSDF information is as simple as averaging or weighted sum. It is also easy to optimize. These qualities make TSDF a good choice of representation for the reconstructed 3D model.
 
 <p align='center'>
-  <img src='/images/depth2tsdf.png' width=450>
+  <img src='images/depth2tsdf.png' width=450>
 </p>
 <p align='center'>
   Figure showing how voxels vox1 and vox2 can be projected to the image to obtain corresponding depth values. TSDF(vox1) = d0 - d1 and TSDF(vox2) = d0 - d2.
@@ -139,7 +139,7 @@ To improve the reconstruction quality, we can divide the entire 3D space into la
 
 
 <p align='center'>
-  <img src='/images/Torch_TSDF_Fusion.gif' width=800>
+  <img src='images/Torch_TSDF_Fusion.gif' width=800>
 </p>
 
 <p align='center'>
